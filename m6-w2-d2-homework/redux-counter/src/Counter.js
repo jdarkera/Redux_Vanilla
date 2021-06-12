@@ -18,6 +18,9 @@ class Counter extends React.Component {
         // //     count: this.state.count - 1
         // });
     }
+    reset = () => {
+        this.props.dispatch({type:'RESET'})
+    }
     render() {
         return (
             <div>
